@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details: Ludo Game - Tushar Chaudhary</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to shared styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> <!-- Optional: If icons are needed -->
+    <style>
+        /* Minor page-specific adjustments if needed */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+            gap: var(--spacing-unit, 1rem);
+            margin-top: 1rem;
+        }
+        .feature-card {
+            background: rgba(0, 0, 0, 0.03);
+            padding: var(--card-padding, 1.5rem);
+            border-radius: 8px;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        @media (prefers-color-scheme: dark) {
+             .feature-card {
+                 background: rgba(255, 255, 255, 0.05);
+                 border-color: rgba(255, 255, 255, 0.1);
+             }
+         }
+        .feature-card h3 {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            font-size: 1.2em;
+            color: var(--secondary-color); /* Use theme color */
+        }
+         @media (prefers-color-scheme: dark) {
+             .feature-card h3 {
+                 color: var(--primary-color); /* Adjust for dark mode */
+             }
+         }
+        .conclusion-section { /* Style the conclusion section */
+             background-color: rgba(52, 152, 219, 0.1); /* Light blue background */
+             padding: var(--card-padding, 1.5rem);
+             border-radius: 8px;
+             margin-top: var(--spacing-unit, 1rem);
+             border-left: 4px solid var(--primary-color);
+        }
+         @media (prefers-color-scheme: dark) {
+             .conclusion-section {
+                 background-color: rgba(52, 152, 219, 0.2);
+                 border-left-color: var(--primary-color);
+             }
+         }
+         /* Ensure lists inside sections have some padding */
+         section ul {
+            padding-left: 20px;
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+         }
+         section h3 {
+             margin-top: 1.5rem;
+             margin-bottom: 0.5rem;
+         }
+         section h3:first-of-type {
+             margin-top: 0;
+         }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+             <!-- Simple Nav: Link back home -->
+             <ul>
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="learn_more.html">About Me</a></li> <!-- Link to learn more page -->
+             </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="project-title" style="text-align: center; padding-bottom: 1rem;">
+            <h1>Ludo Game Development</h1>
+            <p>A Web-based Interactive Game Project</p>
+        </section>
+
+        <section id="introduction">
+            <h2>1. Introduction</h2>
+            <p>This project involves the development of a fully functional Ludo game using HTML, CSS, and JavaScript. The digital version replicates all the key features of the physical game while adding digital enhancements for better user experience.</p>
+        </section>
+
+        <section id="objectives">
+            <h2>2. Project Objectives</h2>
+            <ul>
+                <li>To create an interactive digital version of the classic Ludo board game</li>
+                <li>To implement game logic using JavaScript</li>
+                <li>To design an attractive and responsive user interface</li>
+                <li>To support multiplayer functionality (2-4 players)</li>
+                <li>To implement all standard Ludo game rules and mechanics</li>
+            </ul>
+        </section>
+
+        <section id="technologies">
+            <h2>3. Technologies Used</h2>
+            <ul>
+                <li><strong>HTML5:</strong> For structuring the game interface</li>
+                <li><strong>CSS3:</strong> For styling and responsive design</li>
+                <li><strong>JavaScript:</strong> For game logic and interactivity</li>
+                <li><strong>Git:</strong> For version control</li>
+            </ul>
+        </section>
+
+        <section id="features">
+            <h2>4. Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Interactive Game Board</h3>
+                    <p>Fully functional Ludo board with all standard paths, bases, and home areas.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Multiplayer Support</h3>
+                    <p>Supports 2-4 players with configurable player count.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Dice Rolling</h3>
+                    <p>Animated dice roll with random number generation.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Token Movement</h3>
+                    <p>Smooth token movement with path following logic.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Game Rules</h3>
+                    <p>Implements all standard Ludo rules including 6s, captures, and home entry.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Responsive Design</h3>
+                    <p>Works on different screen sizes from desktop to mobile.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="implementation">
+            <h2>5. Implementation Details</h2>
+            <h3>Game Board Structure</h3>
+            <p>The game board is implemented using CSS Grid for precise positioning of all elements. The board consists of 15x15 grid cells that form the playing area, bases, and home paths.</p>
+
+            <h3>Game Logic</h3>
+            <p>The JavaScript code handles all game mechanics including:</p>
+            <ul>
+                <li>Player turns and token movement</li>
+                <li>Dice rolling and special rules for 6s</li>
+                <li>Token capturing and sending back to base</li>
+                <li>Home path movement and victory conditions</li>
+            </ul>
+
+            <h3>User Interface</h3>
+            <p>The UI includes a game board, player information panel, dice display, and game controls. The design uses a clean, colorful aesthetic with smooth animations for token movement.</p>
+        </section>
+
+        <section id="challenges">
+            <h2>6. Challenges Faced</h2>
+            <ul>
+                <li>Implementing the complex movement rules for different player paths</li>
+                <li>Handling token collisions and captures</li>
+                <li>Creating smooth animations for token movement</li>
+                <li>Making the game responsive for different screen sizes</li>
+            </ul>
+        </section>
+
+        <section id="future-enhancements">
+            <h2>7. Future Enhancements</h2>
+            <ul>
+                <li>Adding online multiplayer functionality</li>
+                <li>Implementing AI opponents for single-player mode</li>
+                <li>Adding sound effects and background music</li>
+                <li>Creating a game history and statistics feature</li>
+            </ul>
+        </section>
+
+        <section id="conclusion" class="conclusion-section">
+             <h2>8. Conclusion</h2>
+             <p>The Ludo Game project successfully demonstrates the implementation of a classic board game using web technologies. The project meets all the initial objectives and provides a fun, interactive gaming experience. Through this project, I gained valuable experience in game development, JavaScript programming, and responsive web design.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tushar Chaudhary. All rights reserved.</p> <!-- Updated footer -->
+    </footer>
+
+</body>
+</html>

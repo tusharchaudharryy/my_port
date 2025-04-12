@@ -1,0 +1,123 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tushar Chaudhary</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work-experience">Work Experience</a></li>
+                <li><a href="#technical-skills">Technical Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Welcome to my Website!</h1>
+            <p>I'm Tushar Chaudhary, a BTech student from Indian Institute of Technology, Ropar.</p>
+            <a href="learn_more.html" class="learn-more-button-link"><button>Learn More</button></a> <a href="Tushar_Chaudhary_IIT_Ropar_Resume.pdf" target="_blank" class="resume-button-link"><button>Resume</button></a>
+        </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm proficient in a range of programming languages, including JavaScript, Python, and HTML with CSS.</p>
+            <p>I'm excited to share my projects and experiences with you, and I'm always looking for new opportunities to learn and grow.</p>
+        </section>
+        <section id="work-experience">
+            <h2>Work Experience</h2>
+            <p>Data Scientist Intern at MLworkX</p>
+            <p>20th May 2025 - 20th July 2025</p>
+            <!-- Add more details like job title, company, dates, description -->
+        </section>
+        <section id="technical-skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Data Skills</h3>
+                    <ul>
+                        <li>Data Analysis</li>
+                        <li>Python</li>
+                        <li>Data Visualization</li>
+                        <li>Machine Learning</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>DevOps Skills</h3>
+                    <ul>
+                        <li>Git & GitHub</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>My Projects</h2>
+            <ul>
+                    <a href="ludo_game.html" class="project-link">
+                        <h3>Ludo Game</h3>
+                        <p>A Ludo Game using HTML, CSS, and JavaScript with Dynamic Screen Sizes.</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <p>If you'd like to get in touch, please don't hesitate to reach out. You can find me on LinkedIn or send me an email.</p>
+            <ul class="contact-links">
+                <li>
+                    <a href="https://www.linkedin.com/in/tushar-chaudhary-90a85625a/" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/tusharchaudharryy" class="social-link">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:chaudhartushar477@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Gmail</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Tushar Chaudhary. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="chat.js"></script>
+
+    <!-- Chatbot Toggle Button -->
+    <button class="chatbot-toggle-btn">
+        <i class="fas fa-comment-dots"></i> <!-- Chat icon -->
+    </button>
+
+    <!-- Chatbot Container -->
+    <div class="chatbot-container"> <!-- Initially hidden via CSS -->
+        <div class="chatbot-header">
+            <h2>Chat Assistant</h2>
+            <button class="chatbot-close-btn">&times;</button> <!-- Close button -->
+        </div>
+        <div class="chatbot-messages">
+            <!-- Messages will appear here -->
+        </div>
+        <div class="chatbot-input">
+            <input type="text" placeholder="Ask about my skills...">
+            <button class="send-btn">Send</button>
+        </div>
+    </div>
+</body>
+</html>

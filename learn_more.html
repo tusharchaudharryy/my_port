@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More About Me - Tushar Chaudhary</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to shared styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> <!-- Optional: If icons are needed -->
+    <!-- Add specific styles for this page if needed, or inline styles -->
+    <style>
+        /* Add minor page-specific adjustments here if necessary */
+        /* Example: Adjust table styles if the default is not suitable */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        /* Ensure dark mode table looks okay */
+        @media (prefers-color-scheme: dark) {
+            th, td {
+                border-color: #555;
+            }
+            th {
+                background-color: #444;
+            }
+            table {
+                 color: var(--text-color); /* Inherit text color */
+            }
+        }
+         /* Make table scrollable on small screens */
+        .table-container {
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+        /* Adjust social link appearance when used inline */
+        .social-link {
+            display: inline; /* Make it flow with text */
+            padding: 0;
+            background: none;
+            color: var(--primary-color);
+            text-decoration: underline;
+            font-weight: normal;
+            text-transform: none;
+            letter-spacing: normal;
+        }
+        .social-link:hover {
+            color: var(--secondary-color);
+            background: none;
+            transform: none;
+            box-shadow: none;
+        }
+        /* Adjust project link appearance when used inline */
+        .project-link {
+             display: inline-block;
+             margin-top: 1rem;
+             padding: 0.6rem 1.2rem; /* Slightly smaller padding */
+        }
+        /* Style for the info cards */
+        .info-card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-unit, 1rem); /* Use spacing unit from styles.css */
+        }
+        .info-card {
+            flex: 1;
+            min-width: 250px; /* Adjust as needed */
+            background: rgba(0, 0, 0, 0.03); /* Subtle background */
+            padding: var(--card-padding, 1.5rem); /* Use card padding from styles.css */
+            border-radius: 8px;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+         @media (prefers-color-scheme: dark) {
+             .info-card {
+                 background: rgba(255, 255, 255, 0.05);
+                 border-color: rgba(255, 255, 255, 0.1);
+             }
+         }
+         .info-card h3 {
+             margin-top: 0;
+             margin-bottom: 1rem;
+             font-size: 1.2em; /* Slightly smaller than section h2 */
+         }
+         .info-card p {
+             margin-bottom: 0.5rem;
+         }
+         .info-card p:last-child {
+             margin-bottom: 0;
+         }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+             <!-- Simple Nav: Link back home -->
+             <ul>
+                 <li><a href="index.html">Home</a></li>
+                 <!-- Add other relevant links if needed -->
+             </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="page-header" style="text-align: center; padding-bottom: 1rem;"> <!-- Simplified header section -->
+             <h1>More About Me</h1>
+             <p>Details about my background, projects, and technical skills.</p>
+        </section>
+
+        <section id="personal-info">
+            <h2>Personal Information</h2>
+             <div class="info-card-container">
+                 <div class="info-card">
+                     <h3>Personal Details</h3>
+                     <p><strong>Name:</strong> Tushar Chaudhary</p>
+                     <p><strong>College:</strong> Indian Institute of Technology, Ropar</p>
+                 </div>
+                 <div class="info-card">
+                     <h3>Contact Information</h3>
+                     <p><strong>Email:</strong> chaudhartushar477@gmail.com</p>
+                     <p><strong>Phone:</strong> +91 9811328312</p>
+                     <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/tushar-chaudhary-90a85625a/" target="_blank" class="social-link">LinkedIn Profile</a></p>
+                     <p><strong>GitHub:</strong> <a href="https://github.com/tusharchaudharryy" target="_blank" class="social-link">GitHub Profile</a></p>
+                 </div>
+             </div>
+        </section>
+
+        <section id="projects-overview">
+            <h2>My Projects Overview</h2>
+            <p>I have created projects using HTML, CSS, and JavaScript, focusing on:</p>
+            <ul>
+                <li>Responsive design for all screen sizes</li>
+                <li>Interactive donation system with UPI integration</li>
+                <li>Clipboard API for easy payment information sharing</li>
+            </ul>
+            <p>
+                <a href="ludo_project_details.html" class="project-link">View Ludo Game Details</a>
+            </p>
+        </section>
+
+        <section id="tech-specs">
+            <h2>Technical Specifications</h2>
+            <h3>Technologies Used</h3>
+            <div class="table-container">
+                 <table>
+                     <thead>
+                         <tr>
+                             <th>Technology</th>
+                             <th>Purpose</th>
+                         </tr>
+                     </thead>
+                     <tbody>
+                         <tr>
+                             <td>HTML5</td>
+                             <td>Page structure and semantic markup</td>
+                         </tr>
+                         <tr>
+                             <td>CSS3</td>
+                             <td>Styling and responsive design</td>
+                         </tr>
+                         <tr>
+                             <td>JavaScript</td>
+                             <td>Interactive functionality</td>
+                         </tr>
+                         <tr>
+                             <td>Clipboard API</td>
+                             <td>UPI ID copy feature</td>
+                         </tr>
+                     </tbody>
+                 </table>
+            </div>
+
+            <h3>Key Features</h3>
+            <ul>
+                <li>Animated popup for donation options</li>
+                <li>Cross-browser compatibility</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tushar Chaudhary. All rights reserved.</p>
+    </footer>
+
+    <!-- Add script links if needed -->
+    <!-- <script src="script.js"></script> -->
+
+</body>
+</html>
